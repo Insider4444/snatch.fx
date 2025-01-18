@@ -42,8 +42,8 @@ const products = [
       "Say goodbye to quality loss! These export settings are optimized to preserve detail in your videos, ensuring that your edits look as orginal—without any compression ",
     price: "200",
     images: [
-      "https://cdn.discordapp.com/attachments/1329465113404772405/1330242317495304313/Untitled-1.jpg?ex=678d4433&is=678bf2b3&hm=b28b719ccaff56d26330f9ac1786e0bd5a824ea9ca9a99525b43303766651b5a&",
       "https://cdn.discordapp.com/attachments/1329465113404772405/1330242317013225543/Untitled-2.jpg?ex=678d4433&is=678bf2b3&hm=dd29cf1f4d6ce18d25914887a199802bf2a4b60f7234098c02fd54850a18015a&",
+      "https://cdn.discordapp.com/attachments/1329465113404772405/1330242317495304313/Untitled-1.jpg?ex=678d4433&is=678bf2b3&hm=b28b719ccaff56d26330f9ac1786e0bd5a824ea9ca9a99525b43303766651b5a&",
     ],
     requirements: ["Media Encoder"],
     qrCodePath:
