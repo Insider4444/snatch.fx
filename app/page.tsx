@@ -1,4 +1,4 @@
-import MainNavigation from "../components/Navigation";
+import MainNavigation from "../components/MainNavigation";
 import Link from "next/link";
 import Image from "next/image";
 
