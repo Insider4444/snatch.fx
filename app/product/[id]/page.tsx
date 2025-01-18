@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Navigation from "../../../components/Navigation";
+import MainNavigation from "../../../components/Navigation";
 import ImageSlider from "../../../components/ImageSlider";
 import PaymentButton from "../../../components/PaymentButton";
 import { Info } from "lucide-react";
@@ -60,7 +60,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
-      <Navigation />
+      <MainNavigation />
       <main className="container mx-auto px-4 py-8">
         <div className="glass-card p-8 max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-8 text-accent">
