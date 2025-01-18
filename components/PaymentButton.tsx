@@ -9,7 +9,7 @@ interface PaymentButtonProps {
   qrCodePath: string
 }
 
-export default function PaymentButton({ amount, productName, qrCodePath }: PaymentButtonProps) {
+export default function PaymentButton({ amount, qrCodePath }: PaymentButtonProps) {
   const [showQR, setShowQR] = useState(false)
   
   const upiUrl = `upi://pay?pa=8074023732@ybl&pn=snatchfx&am=${amount}&cu=INR`

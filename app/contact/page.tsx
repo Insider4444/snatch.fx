@@ -37,7 +37,7 @@ export default function ContactPage() {
             </div>
           </div>
           <p className="mt-12 text-center text-secondary">
-            We'd love to hear from you! Reach out to us on Instagram or via
+            We&apos;d love to hear from you! Reach out to us on Instagram or via
             email for any inquiries or support.
           </p>
         </div>
