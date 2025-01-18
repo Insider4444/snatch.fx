@@ -113,14 +113,14 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 
               <div className="mt-4 text-sm text-secondary md:hidden">
                 <p>
-                  Click the "Pay" button above to make the payment using your
+                  Click the &quot;Pay&quot; button above to make the payment using your
                   preferred UPI app.
                 </p>
               </div>
 
               <div className="mt-4 text-sm text-secondary hidden md:block">
                 <p>
-                  Click the "Pay" button above to reveal the QR code. Scan it
+                  Click the &quot;Pay&quot; button above to reveal the QR code. Scan it
                   with any UPI app on your mobile device to complete the
                   payment.
                 </p>
