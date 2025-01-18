@@ -3,19 +3,81 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0f0f1a;
+  --card-background: rgba(255, 255, 255, 0.1);
+  --text-primary: #ffffff;
+  --text-secondary: #a0aec0;
+  --accent: #ff4136;
+  --button-bg: #1e1e2e;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  cursor: none;
+}
+
+.glass-card {
+  background: var(--card-background);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.neomorphic-button {
+  background: var(--button-bg);
+  box-shadow: 5px 5px 10px #0d0d14, -5px -5px 10px #2f2f44;
+  border: none;
+  color: var(--accent);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.neomorphic-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 80%);
+  transform: scale(0);
+  transition: transform 0.3s ease-out;
+}
+
+.neomorphic-button:hover::before {
+  transform: scale(1);
+}
+
+.neomorphic-button:active {
+  box-shadow: inset 3px 3px 6px #0d0d14, inset -3px -3px 6px #2f2f44;
+}
+
+.neomorphic-box {
+  background: var(--button-bg);
+  box-shadow: 5px 5px 10px #0d0d14, -5px -5px 10px #2f2f44;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-neo {
+  box-shadow: 5px 5px 10px #0d0d14, -5px -5px 10px #2f2f44;
+}
+
+@media (hover: none) {
+  body {
+    cursor: auto;
+  }
+}
+
+.emphasized-link {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.emphasized-link:hover {
+  color: #ff6347;
+  /* Slightly different color on hover */
 }
